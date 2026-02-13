@@ -10,11 +10,7 @@ const openRouter = new OpenRouter({
 
 async function generatedContent({ topic, platform, tone }) {
   try {
-    console.log("📝 Topic:", topic);
-    console.log("📱 Platform:", platform);
-    console.log("🎭 Tone:", tone);
-    console.log("🔑 API Key:", process.env.OPENROUTER_API_KEY);
-    console.log("========================\n");
+   
 
     const prompt = `Create a ${tone} ${platform} post about: "${topic}". Make it engaging and optimized for ${platform}. Include relevant hashtags if applicable. Keep it concise and attention-grabbing.`;
 
@@ -41,12 +37,9 @@ async function generatedContent({ topic, platform, tone }) {
     console.log("\n\n✅ Content generated successfully!\n");
     return fullContent;
   } catch (error) {
-    console.error("\n=== ERROR DETAILS ===");
-    console.error("❌ Message:", error.message);
-    console.error("❌ Status Code:", error.statusCode);
-    console.error("❌ Error Body:", error.body);
-    console.error("====================\n");
-    throw error;
+    
+    console.error(" Message:", error.message);
+
   }
 }
 
