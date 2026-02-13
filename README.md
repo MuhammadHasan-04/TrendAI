@@ -1,0 +1,1 @@
+TrendAI is a full-stack web application that tracks trending topics, generates content based on trends, and maintains a personalized user history. Built with React (Vite) for the frontend and SQLite for the backend, it’s designed for fast, responsive, and AI-assisted content exploration.
